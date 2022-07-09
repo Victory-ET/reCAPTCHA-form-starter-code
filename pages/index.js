@@ -2,6 +2,8 @@ import { React, useState } from "react";
 
 export default function Home() {
   const [value, setValue] = useState("");
+  const [value2, setValue2] = useState("");
+  
   return (
     <div className="container">
       <div className="form-cont">
@@ -27,9 +29,9 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Doe"
-                value={value}
+                value={value2}
                 onChange={(e) => {
-                  setValue(e.target.value);
+                  setValue2(e.target.value);
                 }}
               />
             </span>
